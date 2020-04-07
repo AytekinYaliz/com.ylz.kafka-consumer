@@ -23,6 +23,7 @@ public class Main {
         props.put("group.id", "user-tracking-consumer");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+        //  props.put("enable.autoCommit", false);
 
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 
